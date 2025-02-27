@@ -5,18 +5,28 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
   "typesVersions": {
     "*": {
       ".": [
-        "src/index.ts"
+        "./dist/index.d.ts"
       ]
     }
   },
   "files": [
-    "src"
+    "dist"
   ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
     "@types/hast": "^3.0.4",
     "devlop": "^1.1.0",
@@ -34,6 +44,11 @@
   },
   "peerDependencies": {
     "vue": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public",

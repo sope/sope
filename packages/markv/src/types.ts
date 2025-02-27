@@ -3,7 +3,7 @@ import type { Components } from 'hast-util-to-jsx-runtime'
 import type { PluggableList } from 'unified'
 import type { RemarkRehypeOptions } from './remark'
 
-export { type Element, type ElementContent } from 'hast'
+export type { Element, ElementContent } from 'hast'
 export { type Components } from 'hast-util-to-jsx-runtime'
 
 /**
