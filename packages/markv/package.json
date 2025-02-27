@@ -1,0 +1,42 @@
+{
+  "name": "markv",
+  "version": "0.0.2",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "src/index.ts"
+      ]
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@types/hast": "^3.0.4",
+    "devlop": "^1.1.0",
+    "hast-util-to-jsx-runtime": "^2.3.5",
+    "html-url-attributes": "^3.0.1",
+    "rehype": "^13.0.2",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0",
+    "vfile": "^6.0.3"
+  },
+  "devDependencies": {
+    "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
