@@ -1,5 +1,7 @@
 # Sope 项目
 
+[[English](README.md)] | [[简体中文](README_cn.md)]
+
 ## 简介
 
 Sope 是一个纯 esm 的组合包项目，包含了实用的工具库。

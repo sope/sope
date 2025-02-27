@@ -1,5 +1,7 @@
 # Sope Project
 
+[[English](README.md)] | [[简体中文](README_cn.md)]
+
 ## Introduction
 
 Sope is a pure ESM composite package project that includes practical utility libraries.
