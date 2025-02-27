@@ -4,6 +4,7 @@
 - pnpm workspaces
 - prettier
 - typescript
+- turbo
 
 ## Add package
 
@@ -16,5 +17,5 @@ to root directory
 run command and choice version
 
 ```bash
-pnpm pub
+pnpm release
 ```
