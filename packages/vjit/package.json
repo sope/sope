@@ -1,0 +1,44 @@
+{
+  "name": "vjit",
+  "version": "1.0.6",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./core": {
+      "import": "./dist/core.js",
+      "types": "./dist/core.d.ts",
+      "default": "./dist/core.js"
+    },
+    "./ipc": {
+      "import": "./dist/ipc.js",
+      "types": "./dist/ipc.d.ts",
+      "default": "./dist/ipc.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "core": [
+        "./dist/vite.d.ts"
+      ],
+      "ipc": [
+        "./dist/ipc.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "nanoid": "^5.1.2",
+    "path-to-regexp": "^8.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}

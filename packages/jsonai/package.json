@@ -1,0 +1,35 @@
+{
+  "name": "jsonai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "src/index.ts"
+      ]
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "bignumber.js": "^9.1.2"
+  },
+  "peerDependencies": {
+    "bignumber.js": "^9.0.0"
+  },
+  "peerDependenciesMeta": {
+    "bignumber.js": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

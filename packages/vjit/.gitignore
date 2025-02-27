@@ -16,7 +16,6 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
-.turbo
 .DS_Store
 *.suo
 *.ntvs*
@@ -24,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .vite/
-
-*.tsbuildinfo
-*.tgz

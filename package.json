@@ -1,20 +1,28 @@
 {
   "name": "monorepo",
-  "description": "",
   "private": true,
+  "description": "",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "clean": "lerna run clean",
-    "build": "lerna run build",
-    "test": "lerna run test",
-    "pub": "lerna publish"
+    "build": "turbo run build",
+    "release": "lerna publish",
+    "test": "turbo run test"
   },
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "prettier": "^2.6.2",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.6.4"
-  }
+    "@types/bun": "latest",
+    "@types/node": "^22.13.5",
+    "lerna": "^8.2.0",
+    "prettier": "^3.5.2",
+    "prettier-plugin-classnames": "^0.7.6",
+    "prettier-plugin-merge": "^0.7.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-packagejson": "^2.5.8",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tsup": "^8.4.0",
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@8.15.9"
 }
