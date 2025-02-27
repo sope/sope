@@ -26,5 +26,5 @@ jobs:
 
       - name: Build
         run: |
-          turbo telemetry disable
+          pnpx turbo telemetry disable
           pnpm run build
