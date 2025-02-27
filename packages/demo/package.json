@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.0-alpha.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm run build"
+  },
+  "publish": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

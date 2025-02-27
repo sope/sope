@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-alpha.0",
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "npmClient": "pnpm",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
+      "message": "chore(release): publish",
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
+}
