@@ -1,6 +1,6 @@
 {
   "name": "unplugin-tailwindcss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "keywords": [
     "unplugin",
@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
-    "tailwindcss": "^4.0.9",
+    "tailwindcss": "^3.4.17",
     "unplugin": "^2.2.0"
   },
   "devDependencies": {
