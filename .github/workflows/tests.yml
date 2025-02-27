@@ -25,4 +25,6 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build
-        run: pnpm run build
+        run: |
+          turbo telemetry disable
+          pnpm run build
