@@ -1,0 +1,47 @@
+{
+  "name": "sonner-ts",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/sonner-ts.js",
+      "types": "./dist/sonner-ts.d.ts",
+      "default": "./dist/sonner-ts.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/sonner-ts.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && pnpm run build:types",
+    "build:types": "vue-tsc -p tsconfig.build.json && api-extractor run"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.51.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "vite": "^6.2.0",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.6"
+  },
+  "peerDependencies": {
+    "vue": "^3"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
