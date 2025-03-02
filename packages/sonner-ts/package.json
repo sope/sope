@@ -8,7 +8,7 @@
       "types": "./dist/sonner-ts.d.ts",
       "default": "./dist/sonner-ts.js"
     },
-    "./styles.css": "./dist/styles.css"
+    "./styles.css": "./dist/sonner-ts.css"
   },
   "typesVersions": {
     "*": {
