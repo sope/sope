@@ -13,12 +13,11 @@ type ExtractRouteParams<T> = T extends `${string}:${infer Param}/${infer Rest}`
 
 export type Context<T> = {
   params: ExtractRouteParams<T>
-
+  req: Request
   json: (data: unknown) => Response
 }
 
 type RouteHandler<T extends string> = (
-  req: Request,
   context: Context<T>,
 ) => Response | Promise<Response>
 
@@ -54,6 +53,7 @@ const createContext = <T extends string>(
   }
 
   const context: Context<T & string> = {
+    req: request,
     params: route.params,
     json(data) {
       return Response.json(data)
@@ -81,14 +81,13 @@ const serve = <R>(fetch: Fetch, routes?: R) => {
         if (typeof value === 'object') {
           for (const [method, handler] of Object.entries(value as object)) {
             if (request.method.toLowerCase() === method.toLowerCase()) {
-              return handler(request, context)
+              return handler(context)
             }
           }
         }
 
         if (typeof value === 'function') {
-          const handler = value
-          return handler(request, context)
+          return value(context)
         }
       }
     }
@@ -99,13 +98,11 @@ const serve = <R>(fetch: Fetch, routes?: R) => {
 
 export class Ipc extends Disposable {
   private id: string
-  // private namespace: string
   private request: EventChannel
   private response: EventChannel
   constructor(namespace = generateId(16)) {
     super()
     this.id = generateId(16)
-    // this.namespace = namespace
 
     this.request = new EventChannel(`${namespace}:request`)
     this.response = new EventChannel(`${namespace}:response`)
