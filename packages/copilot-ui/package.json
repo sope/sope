@@ -1,7 +1,7 @@
 {
   "name": "copilot-ui",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "description": "",
   "keywords": [],
   "license": "ISC",
