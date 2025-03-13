@@ -25,12 +25,12 @@
     "build:types": "vue-tsc -p tsconfig.build.json && api-extractor run"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.51.1",
+    "@microsoft/api-extractor": "^7.52.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
-    "vite": "^6.2.0",
+    "vite": "^6.2.1",
     "vue": "^3.5.13",
-    "vue-tsc": "^2.2.6"
+    "vue-tsc": "^2.2.8"
   },
   "peerDependencies": {
     "vue": "^3"
