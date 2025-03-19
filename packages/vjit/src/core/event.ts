@@ -1,12 +1,21 @@
-import { Disposable } from './disposable'
+import { DisposableStack } from '@whatwg-node/disposablestack'
 
-export class EventChannel extends Disposable {
+export class EventChannel implements Disposable {
   private namespace: string
   private host: Element
+  private disposeableStack: DisposableStack = new DisposableStack()
+
   constructor(namespace: string) {
-    super()
     this.host = document as Node as Element
     this.namespace = namespace
+  }
+
+  dispose() {
+    this[Symbol.dispose]()
+  }
+
+  [Symbol.dispose](): void {
+    this.disposeableStack.dispose()
   }
 
   type(name: string) {
@@ -26,7 +35,7 @@ export class EventChannel extends Disposable {
       return
     }
 
-    this.disposes.push(() => {
+    this.disposeableStack.defer(() => {
       this.host.removeEventListener(type, fn)
     })
   }
