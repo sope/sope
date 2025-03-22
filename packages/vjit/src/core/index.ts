@@ -1,4 +1,10 @@
-export * from '@whatwg-node/disposablestack'
+export {
+  AsyncDisposableStack,
+  DisposableStack,
+  DisposableSymbols,
+  SuppressedError,
+  patchSymbols,
+} from '@whatwg-node/disposablestack'
 export * from './event'
-export * from './logger'
 export * from './id'
+export * from './logger'
