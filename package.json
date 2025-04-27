@@ -11,9 +11,9 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.8",
-    "@types/node": "^22.14.0",
-    "lerna": "^8.2.1",
+    "@types/bun": "^1.2.10",
+    "@types/node": "^22.15.2",
+    "lerna": "^8.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-classnames": "^0.7.7",
     "prettier-plugin-merge": "^0.7.3",
@@ -21,7 +21,7 @@
     "prettier-plugin-packagejson": "^2.5.10",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tsup": "^8.4.0",
-    "turbo": "^2.5.0",
+    "turbo": "^2.5.2",
     "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@8.15.9"
