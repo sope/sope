@@ -4,7 +4,7 @@
     "dev": "vite dev"
   },
   "devDependencies": {
-    "vite": "^6.3.3",
+    "vite": "^6.3.5",
     "vite-plugin-inspect": "^11.0.1"
   }
 }
