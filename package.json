@@ -11,7 +11,7 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.13",
+    "@types/bun": "^1.2.14",
     "@types/node": "^22.15.21",
     "lerna": "^8.2.2",
     "prettier": "^3.5.3",
@@ -20,7 +20,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-packagejson": "^2.5.14",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tsdown": "^0.11.13",
+    "tsdown": "^0.12.1",
     "tsup": "^8.5.0",
     "turbo": "^2.5.3",
     "typescript": "^5.8.3"
