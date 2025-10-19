@@ -8,6 +8,7 @@
   "scripts": {
     "build": "turbo run build",
     "release": "lerna publish",
+    "release:retry": "lerna publish from-package",
     "test": "turbo run test"
   },
   "devDependencies": {
