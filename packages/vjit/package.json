@@ -38,6 +38,9 @@
     "vjit-core": "workspace:^",
     "vjit-ipc": "workspace:^"
   },
+  "devDependencies": {
+    "tsdown": "^0.15.8"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

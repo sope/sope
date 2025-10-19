@@ -25,6 +25,9 @@
         "vjit-core": "workspace:^",
         "vjit-ipc": "workspace:^",
       },
+      "devDependencies": {
+        "tsdown": "^0.15.8",
+      },
     },
     "packages/vjit-core": {
       "name": "vjit-core",
@@ -33,6 +36,9 @@
         "@whatwg-node/disposablestack": "^0.0.6",
         "nanoid": "^5.1.6",
       },
+      "devDependencies": {
+        "tsdown": "^0.15.8",
+      },
     },
     "packages/vjit-ipc": {
       "name": "vjit-ipc",
@@ -40,6 +46,9 @@
       "dependencies": {
         "path-to-regexp": "^8.3.0",
         "vjit-core": "workspace:^",
+      },
+      "devDependencies": {
+        "tsdown": "^0.15.8",
       },
     },
   },
