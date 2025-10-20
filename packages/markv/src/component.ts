@@ -23,12 +23,12 @@ export const Markdown = defineComponent<Options>({
     'unwrapDisallowed',
     'urlTransform',
   ],
-  setup({ components, ...props }) {
+  setup(props) {
     return () => {
       const tree = createAST(props)
       return toJsxRuntime(tree, {
         Fragment,
-        components,
+        components: props.components,
         ignoreInvalidStyle: true,
         elementAttributeNameCase: 'html',
         jsx,
