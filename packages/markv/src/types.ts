@@ -15,12 +15,6 @@ export { type Components } from 'hast-util-to-jsx-runtime'
  */
 type UrlTransform = (url: string, key: string, node: Readonly<Element>) => string | null | undefined
 
-// Extra fields we pass.
-type ExtraProps = {
-  //passed when `passNode` is on.
-  node?: Element
-}
-
 // Whether to allow `element` (default: `false`).
 type AllowElement = (
   // Filter elements.
