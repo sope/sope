@@ -6,7 +6,7 @@
       "name": "monorepo",
       "devDependencies": {
         "@types/bun": "^1.3.2",
-        "@types/node": "^24.10.0",
+        "@types/node": "^24.10.1",
         "lerna": "^9.0.1",
         "oxlint": "^1.28.0",
         "prettier": "^3.6.2",
@@ -19,7 +19,7 @@
     },
     "packages/markv": {
       "name": "markv",
-      "version": "1.1.3",
+      "version": "1.1.5",
       "dependencies": {
         "@types/hast": "^3.0.4",
         "devlop": "^1.1.0",
@@ -45,7 +45,7 @@
     },
     "packages/vjit": {
       "name": "vjit",
-      "version": "1.2.0",
+      "version": "1.2.2",
       "dependencies": {
         "vjit-core": "workspace:^",
         "vjit-ipc": "workspace:^",
@@ -56,7 +56,7 @@
     },
     "packages/vjit-core": {
       "name": "vjit-core",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "dependencies": {
         "@whatwg-node/disposablestack": "^0.0.6",
         "nanoid": "^5.1.6",
@@ -67,7 +67,7 @@
     },
     "packages/vjit-ipc": {
       "name": "vjit-ipc",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "dependencies": {
         "path-to-regexp": "^8.3.0",
         "vjit-core": "workspace:^",
@@ -328,7 +328,7 @@
 
     "@types/ms": ["@types/ms@2.1.0", "https://registry.npmmirror.com/@types/ms/-/ms-2.1.0.tgz", {}, "sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA=="],
 
-    "@types/node": ["@types/node@24.10.0", "https://registry.npmmirror.com/@types/node/-/node-24.10.0.tgz", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@types/node": ["@types/node@24.10.1", "https://registry.npmmirror.com/@types/node/-/node-24.10.1.tgz", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@types/normalize-package-data": ["@types/normalize-package-data@2.4.4", "https://registry.npmmirror.com/@types/normalize-package-data/-/normalize-package-data-2.4.4.tgz", {}, "sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA=="],
 
@@ -1439,6 +1439,8 @@
     "bin-links/read-cmd-shim": ["read-cmd-shim@5.0.0", "https://registry.npmmirror.com/read-cmd-shim/-/read-cmd-shim-5.0.0.tgz", {}, "sha512-SEbJV7tohp3DAAILbEMPXavBjAnMN0tVnh4+9G8ihV4Pq3HYF9h8QNez9zkJ1ILkv9G2BjdzwctznGZXgu/HGw=="],
 
     "bin-links/write-file-atomic": ["write-file-atomic@6.0.0", "https://registry.npmmirror.com/write-file-atomic/-/write-file-atomic-6.0.0.tgz", { "dependencies": { "imurmurhash": "^0.1.4", "signal-exit": "^4.0.1" } }, "sha512-GmqrO8WJ1NuzJ2DrziEI2o57jKAVIQNf8a18W3nCYU3H7PNWqCCVTeH6/NQE93CIllIgQS98rrmVkYgTX9fFJQ=="],
+
+    "bun-types/@types/node": ["@types/node@24.10.0", "https://registry.npmmirror.com/@types/node/-/node-24.10.0.tgz", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
 
     "cacache/p-map": ["p-map@7.0.3", "https://registry.npmmirror.com/p-map/-/p-map-7.0.3.tgz", {}, "sha512-VkndIv2fIB99swvQoA65bm+fsmt6UNdGeIB0oxBs+WhAhdh08QA04JXpI7rbB9r08/nkbysKoya9rtDERYOYMA=="],
 
