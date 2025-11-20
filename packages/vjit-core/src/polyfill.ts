@@ -1,4 +1,9 @@
-import { DisposableStack, patchSymbols } from '@whatwg-node/disposablestack'
+import {
+  AsyncDisposableStack,
+  DisposableStack,
+  SuppressedError,
+  patchSymbols,
+} from '@whatwg-node/disposablestack'
 
 if (typeof globalThis.DisposableStack === 'undefined') {
   patchSymbols()
