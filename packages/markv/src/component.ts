@@ -1,6 +1,6 @@
 import { toJsxRuntime } from 'hast-util-to-jsx-runtime'
 import { defineComponent } from 'vue'
-import { Fragment, jsx, jsxs } from 'vue/jsx-runtime'
+import { Fragment, jsx, jsx as jsxs } from 'vue/jsx-runtime'
 import { createAST } from './ast'
 import { type Options } from './types'
 
