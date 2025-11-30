@@ -39,7 +39,7 @@
     "vjit-ipc": "workspace:^"
   },
   "devDependencies": {
-    "tsdown": "^0.16.6"
+    "tsdown": "^0.16.8"
   },
   "publishConfig": {
     "access": "public",
