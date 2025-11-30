@@ -17,10 +17,10 @@
     "@types/node": "^24.10.1",
     "lerna": "^9.0.3",
     "oxlint": "^1.30.0",
-    "prettier": "^3.7.2",
+    "prettier": "^3.7.3",
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-packagejson": "^2.5.20",
-    "tsdown": "^0.16.6",
+    "tsdown": "^0.16.8",
     "turbo": "^2.6.1",
     "typescript": "^5.9.3"
   },
