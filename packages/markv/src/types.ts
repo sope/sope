@@ -1,7 +1,7 @@
 import type { Element, Parents } from 'hast'
 import type { Components } from 'hast-util-to-jsx-runtime'
 import type { PluggableList } from 'unified'
-import { RemarkRehypeOptions } from './define'
+import type { RemarkRehypeOptions } from './define'
 
 export type { Element, ElementContent } from 'hast'
 export { type Components } from 'hast-util-to-jsx-runtime'
@@ -13,7 +13,11 @@ export { type Components } from 'hast-util-to-jsx-runtime'
  * @param {Readonly<Element>} node Node.
  * @returns {string | null | undefined} Transformed URL (optional).
  */
-type UrlTransform = (url: string, key: string, node: Readonly<Element>) => string | null | undefined
+type UrlTransform = (
+  url: string,
+  key: string,
+  node: Readonly<Element>,
+) => string | null | undefined
 
 // Whether to allow `element` (default: `false`).
 type AllowElement = (
@@ -24,7 +28,7 @@ type AllowElement = (
   // Index of `element` in `parent`.
   parent?: Readonly<Parents>,
 ) => // Parent of `element`.
-boolean | null | undefined
+  boolean | null | undefined
 
 // Configuration.
 export type Options = {

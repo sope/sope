@@ -1,6 +1,6 @@
 import { EventChannel, generateId } from 'vjit-core'
 import { createContext } from './context'
-import { RouteValue } from './types'
+import type { RouteValue } from './types'
 
 type Fetch = (req: Request) => Response | Promise<Response>
 

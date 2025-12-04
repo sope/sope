@@ -6,11 +6,11 @@ import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 import { visit, type BuildVisitor } from 'unist-util-visit'
 import { VFile } from 'vfile'
-import { type Options } from './types'
-import { defaultPlugins } from './define'
 import { defaultRemarkRehypeOptions, defaultUrlTransform } from './default'
+import { defaultPlugins } from './define'
+import { type Options } from './types'
 
-const createProcessor = ({
+export const createProcessor = ({
   rehypePlugins,
   remarkPlugins,
   remarkRehypeOptions,
@@ -28,14 +28,14 @@ const createProcessor = ({
   return processor
 }
 
-const createFile = ({ children }: { children?: string | null }) => {
+export const createFile = ({ children }: { children?: string | null }) => {
   const file = new VFile()
 
   if (typeof children === 'string') {
     file.value = children
   } else {
     unreachable(
-      `Unexpected value \`${children}\` for \`children\` prop, expected \`string\``
+      `Unexpected value \`${children}\` for \`children\` prop, expected \`string\``,
     )
   }
   return file
@@ -51,11 +51,11 @@ const post = (
     unwrapDisallowed,
     urlTransform = defaultUrlTransform,
     ...options
-  }: Options
+  }: Options,
 ) => {
   if (allowedElements && disallowedElements) {
     unreachable(
-      'Unexpected combined `allowedElements` and `disallowedElements`, expected one or the other'
+      'Unexpected combined `allowedElements` and `disallowedElements`, expected one or the other',
     )
   }
 
@@ -128,8 +128,13 @@ const post = (
   return tree
 }
 
-export const createAST = (options: Options) => {
+export const parse = (options: Options) => {
   const processor = createProcessor(options)
   const file = createFile({ children: options.content })
-  return post(processor.runSync(processor.parse(file), file), options)
+  return processor.runSync(processor.parse(file), file)
+}
+
+export const createAST = (options: Options) => {
+  const tree = parse(options)
+  return post(tree, options)
 }

@@ -1,5 +1,10 @@
-import { match, MatchOptions, ParseOptions, Path } from 'path-to-regexp'
-import { Context, ExtractRouteParams } from './types'
+import {
+  match,
+  type MatchOptions,
+  type ParseOptions,
+  type Path,
+} from 'path-to-regexp'
+import type { Context, ExtractRouteParams } from './types'
 
 export const createContext = <T extends string>(
   request: Request,

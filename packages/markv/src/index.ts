@@ -1,3 +1,4 @@
+export { parse } from './ast'
 export { Markdown } from './component'
 export { type Components, type Element, type ElementContent } from './types'
 
