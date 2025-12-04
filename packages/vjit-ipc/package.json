@@ -1,12 +1,12 @@
 {
   "name": "vjit-ipc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
       "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     }
   },
