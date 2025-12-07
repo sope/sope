@@ -20,7 +20,7 @@
     },
     "packages/markv": {
       "name": "markv",
-      "version": "1.1.6",
+      "version": "1.1.7",
       "dependencies": {
         "@types/hast": "^3.0.4",
         "devlop": "^1.1.0",
@@ -44,7 +44,7 @@
     },
     "packages/vjit": {
       "name": "vjit",
-      "version": "1.2.3",
+      "version": "1.2.4",
       "dependencies": {
         "vjit-core": "workspace:^",
         "vjit-ipc": "workspace:^",
@@ -52,7 +52,7 @@
     },
     "packages/vjit-core": {
       "name": "vjit-core",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "dependencies": {
         "@whatwg-node/disposablestack": "^0.0.6",
         "nanoid": "^5.1.6",
@@ -60,7 +60,7 @@
     },
     "packages/vjit-ipc": {
       "name": "vjit-ipc",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "dependencies": {
         "path-to-regexp": "^8.3.0",
         "vjit-core": "workspace:^",
