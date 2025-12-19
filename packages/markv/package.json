@@ -39,7 +39,7 @@
     "vfile": "^6.0.3"
   },
   "devDependencies": {
-    "vue": "^3.5.25"
+    "vue": "^3.5.26"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
